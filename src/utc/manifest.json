@@ -1,0 +1,14 @@
+{
+  "$schema": "https://moonlight-mod.github.io/manifest.schema.json",
+  "id": "utc",
+  "version": "1.0.0",
+  "apiLevel": 2,
+  "meta": {
+    "name": "UTC",
+    "tagline": "Universal Theming Classes - appends stable class names for CSS.",
+    "description": "Adds stable class names to elements to prevent breaking upon class reroll, making theming easier to maintain.",
+    "tags": ["library"],
+    "authors": ["Nanakusa"],
+    "source": "https://github.com/yofukashino/moonlight-extensions"
+  }
+}

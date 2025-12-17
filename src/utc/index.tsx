@@ -5,8 +5,7 @@ export const patches: ExtensionWebExports["patches"] = [
     find: ".jsx=",
     replace: {
       match: /return{\$\$typeof:\i,type:(\i).+?props:(\i)/,
-      replacement: (suffix, type, props) =>
-        ` ${props}.className && ${type} !== 'html' && (${props}.className = require("utc_classname").getClassName(${props}.className));${suffix}`
+      replacement: (suffix, type, props) => `require("utc_classname").patchClassName(${props}, ${type});${suffix}`
     }
   }
 ];

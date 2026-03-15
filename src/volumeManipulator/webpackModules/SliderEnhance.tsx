@@ -63,6 +63,8 @@ function SliderTextInputWrapper({
         <TextInput
           type="number"
           id="volume"
+          // @ts-expect-error outdated type
+          size="sm"
           min={minValue}
           max={maxValue}
           value={value}

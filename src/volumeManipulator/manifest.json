@@ -1,15 +1,16 @@
 {
   "$schema": "https://moonlight-mod.github.io/manifest.schema.json",
   "id": "volumeManipulator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiLevel": 2,
   "meta": {
     "name": "Volume Manipulator",
     "tagline": "Boost volume beyond 200%",
     "description": "Adds a number input to user/stream volume sliders and changes their max limits.",
-    "tags": ["qol", "fixes","contextMenu", "voice"],
+    "tags": ["qol", "fixes", "contextMenu", "voice"],
     "authors": ["Nanakusa"],
-    "source": "https://github.com/yofukashino/moonlight-extensions"
+    "source": "https://github.com/yofukashino/moonlight-extensions",
+    "changelog": "Fixes for latest Discord"
   },
   "settings": {
     "multiplier": {

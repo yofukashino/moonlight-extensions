@@ -19,16 +19,15 @@ export const patches: Patch[] = [
   {
     find: "user-volume",
     replace: {
-      match: /return\(0,\w+\.jsx\)\(/,
-      replacement: () => `return require('volumeManipulator_SliderEnhance')._enhanceSlider(`
+      match: /=>\(0,\i\.jsx\)\(/,
+      replacement: () => `=>require('volumeManipulator_SliderEnhance')._enhanceSlider(`
     }
   }
 ];
 
 export const webpackModules: Record<string, ExtensionWebpackModule> = {
   PreloadedUserSettings: {
-    dependencies: [{ ext: "common", id: "stores" }],
-    entrypoint: true
+    dependencies: [{ ext: "spacepack", id: "spacepack" }]
   },
   SliderEnhance: {
     dependencies: [
@@ -39,8 +38,7 @@ export const webpackModules: Record<string, ExtensionWebpackModule> = {
       { id: "react" },
       { id: "discord/uikit/TextInput" },
       { id: "classnames" }
-    ],
-    entrypoint: true
+    ]
   },
   Settings: {
     entrypoint: true,
